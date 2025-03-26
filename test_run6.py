@@ -6,7 +6,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mc_ode_
 
 # test_run.py
 
-from montecarlo_ode_solver import MonteCarloODESolver, plot_solution
+from mc_ode_solver import MonteCarloODESolver, plot_solution
 import numpy as np
 
 # Custom ODE: dy/dt = sin(t) * y

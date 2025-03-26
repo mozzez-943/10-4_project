@@ -6,8 +6,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mc_ode_
 
 # test_run.py
 
-from montecarlo_ode_solver import MonteCarloODESolver, plot_solution
-from montecarlo_ode_solver.benchmarks import nonlinear_ode
+from mc_ode_solver import MonteCarloODESolver, plot_solution
+from mc_ode_solver.benchmarks import nonlinear_ode
 
 # Set up the solver for a nonlinear ODE: dy/dt = y^2 - 1
 solver = MonteCarloODESolver(ode_func=nonlinear_ode, y0=1, t_span=(0, 10), method='importance_sampling', num_samples=1000)
