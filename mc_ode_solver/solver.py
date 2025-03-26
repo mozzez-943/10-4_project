@@ -1,6 +1,6 @@
 # solver.py
 import numpy as np
-from .samplers import importance_sampling, quasi_monte_carlo
+from samplers import importance_sampling, quasi_monte_carlo
 
 class MonteCarloODESolver:
     def __init__(self, ode_func, y0, t_span, method='quasi_monte_carlo', num_samples=1000):
