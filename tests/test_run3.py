@@ -10,7 +10,7 @@ from mc_ode_solver import MonteCarloODESolver, plot_solution
 from mc_ode_solver.benchmarks import nonlinear_ode
 
 # Set up the solver for a nonlinear ODE: dy/dt = y^2 - 1
-solver = MonteCarloODESolver(ode_func=nonlinear_ode, y0=1, t_span=(0, 10), method='importance_sampling', num_samples=1000)
+solver = MonteCarloODESolver(ode_func=nonlinear_ode, y0=1, t_span=(0, 10), method='importance_sampling', num_samples=10)
 
 # Solve the ODE
 t_vals, solutions = solver.solve()

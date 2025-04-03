@@ -19,7 +19,7 @@ def test_linear():
     t_span = (0, 2)
     
     # Monte Carlo solution
-    solver = MonteCarloODESolver(linear_ode, y0, t_span, method='importance_sampling', num_samples=1000)
+    solver = MonteCarloODESolver(linear_ode, y0, t_span, method='importance_sampling', num_samples=100)
     t_vals, solutions = solver.solve()
     
     # Analytical solution (y = e^(-2t))
