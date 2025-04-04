@@ -1,6 +1,7 @@
+# Add your project to the Python path
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../'))
+sys.path.insert(0, os.path.abspath('../..'))
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -10,18 +11,21 @@ sys.path.insert(0, os.path.abspath('../'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'STA410 - Statistical Computing Final Project'
+project = '10-4 Project'
 copyright = '2025, Moeez Omair'
 author = 'Moeez Omair'
-release = 'v1.0'
+release = 'v1.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+# Add extensions
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',  # for Google and NumPy style docstrings
-    'sphinx_autodoc_typehints',  # optional, for better type hint handling
+    'sphinx.ext.viewcode',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.intersphinx',
+    'sphinx_autodoc_typehints',
 ]
 
 templates_path = ['_templates']
@@ -32,6 +36,6 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+# Set theme
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-autodoc_member_order = 'bysource'  # Order members by source order

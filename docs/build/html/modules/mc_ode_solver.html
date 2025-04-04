@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mc_ode_solver package &mdash; 10-4 Project v1.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=45183d27"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            10-4 Project
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">10-4 Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">mc_ode_solver package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/modules/mc_ode_solver.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mc-ode-solver-package">
+<h1>mc_ode_solver package<a class="headerlink" href="#mc-ode-solver-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-mc_ode_solver.altogether">
+<span id="mc-ode-solver-altogether-module"></span><h2>mc_ode_solver.altogether module<a class="headerlink" href="#module-mc_ode_solver.altogether" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mc_ode_solver.altogether.MonteCarloODESolver">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mc_ode_solver.altogether.</span></span><span class="sig-name descname"><span class="pre">MonteCarloODESolver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ode_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_span</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'quasi_monte_carlo'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/altogether.html#MonteCarloODESolver"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.altogether.MonteCarloODESolver" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mc_ode_solver.altogether.MonteCarloODESolver.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/altogether.html#MonteCarloODESolver.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.altogether.MonteCarloODESolver.solve" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.altogether.importance_sampling">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.altogether.</span></span><span class="sig-name descname"><span class="pre">importance_sampling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ode_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/altogether.html#importance_sampling"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.altogether.importance_sampling" title="Link to this definition"></a></dt>
+<dd><p>Perform importance sampling for the ODE solver with proper time step integration.</p>
+<p>Parameters:
+- ode_func: Function representing dy/dt = f(t, y)
+- t: Current time step
+- y: Current state
+- dt: Time step size
+- num_samples: Number of importance samples</p>
+<p>Returns:
+- Next state estimate</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.altogether.linear_ode">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.altogether.</span></span><span class="sig-name descname"><span class="pre">linear_ode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/altogether.html#linear_ode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.altogether.linear_ode" title="Link to this definition"></a></dt>
+<dd><p>Simple linear ODE: dy/dt = -2y</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.altogether.nonlinear_ode">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.altogether.</span></span><span class="sig-name descname"><span class="pre">nonlinear_ode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/altogether.html#nonlinear_ode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.altogether.nonlinear_ode" title="Link to this definition"></a></dt>
+<dd><p>Nonlinear ODE: dy/dt = y^2 - 1</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.altogether.plot_solution">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.altogether.</span></span><span class="sig-name descname"><span class="pre">plot_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t_vals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solutions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ODE</span> <span class="pre">Solution'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xlabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Time'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ylabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Solution'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/altogether.html#plot_solution"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.altogether.plot_solution" title="Link to this definition"></a></dt>
+<dd><p>Plot the solution of the ODE over time.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.altogether.quasi_monte_carlo">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.altogether.</span></span><span class="sig-name descname"><span class="pre">quasi_monte_carlo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ode_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scramble</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/altogether.html#quasi_monte_carlo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.altogether.quasi_monte_carlo" title="Link to this definition"></a></dt>
+<dd><p>Use a quasi-random sequence for Monte Carlo integration with proper time step.</p>
+<p>Parameters:
+- ode_func: Function representing dy/dt = f(t, y)
+- t: Current time step
+- y: Current state
+- dt: Time step size
+- dim: Dimensionality of the sequence
+- scramble: Whether to scramble the sequence</p>
+<p>Returns:
+- Next state estimate</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.altogether.run_test">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.altogether.</span></span><span class="sig-name descname"><span class="pre">run_test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/altogether.html#run_test"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.altogether.run_test" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-mc_ode_solver.benchmarks">
+<span id="mc-ode-solver-benchmarks-module"></span><h2>mc_ode_solver.benchmarks module<a class="headerlink" href="#module-mc_ode_solver.benchmarks" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.benchmarks.linear_ode">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.benchmarks.</span></span><span class="sig-name descname"><span class="pre">linear_ode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/benchmarks.html#linear_ode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.benchmarks.linear_ode" title="Link to this definition"></a></dt>
+<dd><p>Define a simple linear ODE: dy/dt = -2y.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>t</strong> (<em>float</em>) – Current time step (not used in the linear ODE, but required for generality).</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – Current state (solution) of the system.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The rate of change of y at time t.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dydt (float)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.benchmarks.nonlinear_ode">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.benchmarks.</span></span><span class="sig-name descname"><span class="pre">nonlinear_ode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/benchmarks.html#nonlinear_ode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.benchmarks.nonlinear_ode" title="Link to this definition"></a></dt>
+<dd><p>Define a nonlinear ODE: dy/dt = y^2 - 1.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>t</strong> (<em>float</em>) – Current time step (not used in the nonlinear ODE, but required for generality).</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – Current state (solution) of the system.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The rate of change of y at time t.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dydt (float)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-mc_ode_solver.samplers">
+<span id="mc-ode-solver-samplers-module"></span><h2>mc_ode_solver.samplers module<a class="headerlink" href="#module-mc_ode_solver.samplers" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.samplers.importance_sampling">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.samplers.</span></span><span class="sig-name descname"><span class="pre">importance_sampling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ode_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/samplers.html#importance_sampling"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.samplers.importance_sampling" title="Link to this definition"></a></dt>
+<dd><p>Perform importance sampling for the ODE solver with proper time step integration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ode_func</strong> (<em>function</em>) – The ODE function representing dy/dt = f(t, y).</p></li>
+<li><p><strong>t</strong> (<em>float</em>) – The current time step.</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – The current state (solution) at time t.</p></li>
+<li><p><strong>dt</strong> (<em>float</em>) – The time step size for integration.</p></li>
+<li><p><strong>num_samples</strong> (<em>int</em>) – The number of samples to generate for importance sampling.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The updated state estimate after performing importance sampling.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>y_next (float)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.samplers.quasi_monte_carlo">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.samplers.</span></span><span class="sig-name descname"><span class="pre">quasi_monte_carlo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ode_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scramble</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/samplers.html#quasi_monte_carlo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.samplers.quasi_monte_carlo" title="Link to this definition"></a></dt>
+<dd><p>Use a quasi-random sequence for Monte Carlo integration with proper time step.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ode_func</strong> (<em>function</em>) – The ODE function representing dy/dt = f(t, y).</p></li>
+<li><p><strong>t</strong> (<em>float</em>) – The current time step.</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – The current state (solution) at time t.</p></li>
+<li><p><strong>dt</strong> (<em>float</em>) – The time step size for integration.</p></li>
+<li><p><strong>dim</strong> (<em>int</em>) – The dimensionality of the sequence (default is 1).</p></li>
+<li><p><strong>scramble</strong> (<em>bool</em>) – Whether to scramble the sequence (default is True).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The updated state estimate after applying quasi-Monte Carlo.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>y_next (float)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-mc_ode_solver.solver">
+<span id="mc-ode-solver-solver-module"></span><h2>mc_ode_solver.solver module<a class="headerlink" href="#module-mc_ode_solver.solver" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mc_ode_solver.solver.MonteCarloODESolver">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mc_ode_solver.solver.</span></span><span class="sig-name descname"><span class="pre">MonteCarloODESolver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ode_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_span</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'quasi_monte_carlo'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/solver.html#MonteCarloODESolver"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.solver.MonteCarloODESolver" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A solver for ordinary differential equations (ODEs) using Monte Carlo methods.</p>
+<p>The solver supports two methods for Monte Carlo integration: importance sampling and quasi-Monte Carlo.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mc_ode_solver.solver.MonteCarloODESolver.ode_func">
+<span class="sig-name descname"><span class="pre">ode_func</span></span><a class="headerlink" href="#mc_ode_solver.solver.MonteCarloODESolver.ode_func" title="Link to this definition"></a></dt>
+<dd><p>The ODE function to solve, where the function returns dy/dt = f(t, y).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mc_ode_solver.solver.MonteCarloODESolver.y0">
+<span class="sig-name descname"><span class="pre">y0</span></span><a class="headerlink" href="#mc_ode_solver.solver.MonteCarloODESolver.y0" title="Link to this definition"></a></dt>
+<dd><p>The initial condition for the ODE.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mc_ode_solver.solver.MonteCarloODESolver.t_span">
+<span class="sig-name descname"><span class="pre">t_span</span></span><a class="headerlink" href="#mc_ode_solver.solver.MonteCarloODESolver.t_span" title="Link to this definition"></a></dt>
+<dd><p>A tuple representing the time span (t0, tf) for the solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mc_ode_solver.solver.MonteCarloODESolver.method">
+<span class="sig-name descname"><span class="pre">method</span></span><a class="headerlink" href="#mc_ode_solver.solver.MonteCarloODESolver.method" title="Link to this definition"></a></dt>
+<dd><p>The Monte Carlo method to use (‘importance_sampling’ or ‘quasi_monte_carlo’).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mc_ode_solver.solver.MonteCarloODESolver.num_samples">
+<span class="sig-name descname"><span class="pre">num_samples</span></span><a class="headerlink" href="#mc_ode_solver.solver.MonteCarloODESolver.num_samples" title="Link to this definition"></a></dt>
+<dd><p>The number of Monte Carlo samples to use for the integration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mc_ode_solver.solver.MonteCarloODESolver.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/solver.html#MonteCarloODESolver.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.solver.MonteCarloODESolver.solve" title="Link to this definition"></a></dt>
+<dd><p>Solve the ODE using the selected Monte Carlo method.</p>
+<p>This method iteratively computes the ODE solution at each time step using the selected
+sampling method (importance sampling or quasi-Monte Carlo).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An array of time values.
+solutions (np.ndarray): An array of solution values corresponding to the time steps.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>t_vals (np.ndarray)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mc_ode_solver.utils">
+<span id="mc-ode-solver-utils-module"></span><h2>mc_ode_solver.utils module<a class="headerlink" href="#module-mc_ode_solver.utils" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.utils.validate_ode_func">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.utils.</span></span><span class="sig-name descname"><span class="pre">validate_ode_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ode_func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/utils.html#validate_ode_func"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.utils.validate_ode_func" title="Link to this definition"></a></dt>
+<dd><p>Validate the ODE function to ensure it is callable and returns a valid result.</p>
+</dd></dl>
+
+</section>
+<section id="module-mc_ode_solver.visualization">
+<span id="mc-ode-solver-visualization-module"></span><h2>mc_ode_solver.visualization module<a class="headerlink" href="#module-mc_ode_solver.visualization" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.visualization.plot_confidence_intervals">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.visualization.</span></span><span class="sig-name descname"><span class="pre">plot_confidence_intervals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t_vals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solutions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">confidence_interval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Confidence</span> <span class="pre">Interval'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/visualization.html#plot_confidence_intervals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.visualization.plot_confidence_intervals" title="Link to this definition"></a></dt>
+<dd><p>Plot the confidence intervals for the ODE solution.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mc_ode_solver.visualization.plot_solution">
+<span class="sig-prename descclassname"><span class="pre">mc_ode_solver.visualization.</span></span><span class="sig-name descname"><span class="pre">plot_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t_vals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solutions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ODE</span> <span class="pre">Solution'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xlabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Time'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ylabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Solution'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mc_ode_solver/visualization.html#plot_solution"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mc_ode_solver.visualization.plot_solution" title="Link to this definition"></a></dt>
+<dd><p>Plot the solution of the ODE over time.</p>
+</dd></dl>
+
+</section>
+<section id="module-mc_ode_solver">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-mc_ode_solver" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Moeez Omair.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
