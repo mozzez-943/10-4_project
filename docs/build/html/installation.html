@@ -44,7 +44,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-installation">Development Installation</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/index.html">API Reference</a></li>
 </ul>
@@ -75,16 +79,27 @@
              
   <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
-<p>To install directly from the GitHub repository:</p>
+<p>To install the package directly from the GitHub repository:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/mozzez-943/10-4_project.git
 </pre></div>
 </div>
-<p>For development installation:</p>
+<section id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading"></a></h2>
+<p>Make sure you have the required dependencies installed:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>numpy<span class="w"> </span>matplotlib
+</pre></div>
+</div>
+</section>
+<section id="development-installation">
+<h2>Development Installation<a class="headerlink" href="#development-installation" title="Link to this heading"></a></h2>
+<p>If you wish to work on the project or contribute to its development:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mozzez-943/10-4_project.git
 <span class="nb">cd</span><span class="w"> </span><span class="m">10</span>-4_project
 pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
 </pre></div>
 </div>
+<p>This installs the package in “editable” mode, allowing changes to the source code to take effect without reinstallation.</p>
+</section>
 </section>
 
 

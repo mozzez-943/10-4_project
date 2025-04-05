@@ -27,5 +27,5 @@ Moeez
 Indices and tables
 ==================
 
-* :ref:`genindex` (General Index)
-* :ref:`modindex` (Crucial for understanding each method)**
+* :ref:`genindex`
+* :ref:`modindex`
