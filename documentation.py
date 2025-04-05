@@ -3,7 +3,10 @@ import webbrowser
 from pathlib import Path
 
 def open_docs():
-    doc_path = Path("docs/build/html/index.html").resolve()
+    # Get the absolute path to this script's directory
+    base_dir = Path(__file__).parent.resolve()
+    doc_path = base_dir / "docs" / "build" / "html" / "index.html"
+
     if doc_path.exists():
         webbrowser.open(f"file://{doc_path}")
     else:
