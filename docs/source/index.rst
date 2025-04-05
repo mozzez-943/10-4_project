@@ -5,6 +5,17 @@
 
 10-4 Project documentation
 ==========================
+
+Hello Professor,
+
+Welcome to my STA410 Project! This documentation was (painfully) generated using Sphinx, as you mentioned your keen interest in how neatly it presents the breakdown of the code.
+
+Please explore the following contents with the explanations for its purpose and expected usage.
+
+Hope you like it!
+
+Moeez
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
